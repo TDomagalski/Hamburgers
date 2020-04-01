@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ddd;
+  max-width: 2000px;
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+}
+
+.wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.wrapper .row1,
+.wrapper .row2,
+.wrapper .row3 {
+  -ms-flex-preferred-size: calc(100%/3);
+      flex-basis: calc(100%/3);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .row1 div,
+.wrapper .row2 div,
+.wrapper .row3 div {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.wrapper .row1 div:nth-child(1) {
+  background-color: #641E16;
+}
+
+.wrapper .row1 div:nth-child(2) {
+  background-color: #7B241C;
+}
+
+.wrapper .row1 div:nth-child(3) {
+  background-color: #922B21;
+}
+
+.wrapper .row1 div:nth-child(4) {
+  background-color: #A93226;
+}
+
+.wrapper .row1 div:nth-child(5) {
+  background-color: #C0392B;
+}
+
+.wrapper .row2 div:nth-child(1) {
+  background-color: #1B5E20;
+}
+
+.wrapper .row2 div:nth-child(2) {
+  background-color: #2E7D32;
+}
+
+.wrapper .row2 div:nth-child(3) {
+  background-color: #388E3C;
+}
+
+.wrapper .row2 div:nth-child(4) {
+  background-color: #43A047;
+}
+
+.wrapper .row2 div:nth-child(5) {
+  background-color: #4CAF50;
+}
+
+.wrapper .row3 div:nth-child(1) {
+  background-color: #1A237E;
+}
+
+.wrapper .row3 div:nth-child(2) {
+  background-color: #283593;
+}
+
+.wrapper .row3 div:nth-child(3) {
+  background-color: #303F9F;
+}
+
+.wrapper .row3 div:nth-child(4) {
+  background-color: #3949AB;
+}
+
+.wrapper .row3 div:nth-child(5) {
+  background-color: #3F51B5;
+}
+/*# sourceMappingURL=style.css.map */
