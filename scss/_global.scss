@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #ddd;
+  background-color: #999;
   max-width: 2000px;
   width: 100%;
   min-height: 100vh;
@@ -24,13 +24,16 @@ body {
     flex-basis: calc(100%/3);
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 
     div {
-      flex-basis: 20%;
+      flex-basis: 25%;
       display: flex;
       justify-content: center;
       align-items: center;
       color: white;
+      border: 1px solid black;
+      box-sizing: border-box;
     }
   }
 
@@ -50,10 +53,6 @@ body {
 
       &:nth-child(4) {
         background-color: #A93226;
-      }
-
-      &:nth-child(5) {
-        background-color: #C0392B;
       }
     }
   }
@@ -75,10 +74,6 @@ body {
       &:nth-child(4) {
         background-color: #43A047;
       }
-
-      &:nth-child(5) {
-        background-color: #4CAF50;
-      }
     }
   }
 
@@ -99,9 +94,37 @@ body {
       &:nth-child(4) {
         background-color: #3949AB;
       }
+    }
+  }
+}
 
-      &:nth-child(5) {
-        background-color: #3F51B5;
+@media (max-width: 992px) {
+  .wrapper {
+    min-height: 200vh;
+
+    .row1,
+    .row2,
+    .row3 {
+      flex-basis: calc(100%/3);
+
+      div {
+        flex-basis: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    min-height: 400vh;
+
+    .row1,
+    .row2,
+    .row3 {
+      flex-basis: calc(100%/3);
+
+      div {
+        flex-basis: 100%;
       }
     }
   }
