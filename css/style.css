@@ -55,7 +55,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
   border: 1px solid black;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -80,7 +79,7 @@ body {
   height: 20px;
   opacity: 1;
   background-color: #000;
-  border-radius: 20%;
+  border-radius: 40%;
 }
 
 .wrapper .row1 > div > div > span:nth-child(1),
@@ -193,10 +192,10 @@ body {
 }
 
 .wrapper .row1 > div:nth-child(1) > div.active > span {
-  -webkit-transition: top .2s .2s, bottom .2s .2s, opacity .2s .3s, -webkit-transform .2s .4s;
-  transition: top .2s .2s, bottom .2s .2s, opacity .2s .3s, -webkit-transform .2s .4s;
-  transition: top .2s .2s, bottom .2s .2s, transform .2s .4s, opacity .2s .3s;
-  transition: top .2s .2s, bottom .2s .2s, transform .2s .4s, opacity .2s .3s, -webkit-transform .2s .4s;
+  -webkit-transition: top .2s, bottom .2s, opacity .2s .1s, -webkit-transform .2s .2s;
+  transition: top .2s, bottom .2s, opacity .2s .1s, -webkit-transform .2s .2s;
+  transition: top .2s, bottom .2s, transform .2s .2s, opacity .2s .1s;
+  transition: top .2s, bottom .2s, transform .2s .2s, opacity .2s .1s, -webkit-transform .2s .2s;
 }
 
 .wrapper .row1 > div:nth-child(1) > div.active > span:nth-child(1) {
@@ -215,11 +214,25 @@ body {
   bottom: calc(50% - 10px);
 }
 
+.wrapper .row1 > div:nth-child(2) > div {
+  -webkit-transition: .2s .4s;
+  transition: .2s .4s;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
 .wrapper .row1 > div:nth-child(2) > div > span {
   -webkit-transition: top .2s .2s, bottom .2s .2s, opacity .2s .1s, -webkit-transform .2s;
   transition: top .2s .2s, bottom .2s .2s, opacity .2s .1s, -webkit-transform .2s;
   transition: top .2s .2s, bottom .2s .2s, transform .2s, opacity .2s .1s;
   transition: top .2s .2s, bottom .2s .2s, transform .2s, opacity .2s .1s, -webkit-transform .2s;
+}
+
+.wrapper .row1 > div:nth-child(2) > div.active {
+  -webkit-transition: .2s;
+  transition: .2s;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .wrapper .row1 > div:nth-child(2) > div.active > span {
@@ -240,6 +253,135 @@ body {
 }
 
 .wrapper .row1 > div:nth-child(2) > div.active > span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  bottom: calc(50% - 10px);
+}
+
+.wrapper .row1 > div:nth-child(3) > div {
+  -webkit-transition: .2s;
+  transition: .2s;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.wrapper .row1 > div:nth-child(3) > div > span {
+  -webkit-transition: top .2s .2s, bottom .2s .2s, opacity .2s .1s, -webkit-transform .2s;
+  transition: top .2s .2s, bottom .2s .2s, opacity .2s .1s, -webkit-transform .2s;
+  transition: top .2s .2s, bottom .2s .2s, transform .2s, opacity .2s .1s;
+  transition: top .2s .2s, bottom .2s .2s, transform .2s, opacity .2s .1s, -webkit-transform .2s;
+}
+
+.wrapper .row1 > div:nth-child(3) > div.active {
+  -webkit-transition: .2s .2s;
+  transition: .2s .2s;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.wrapper .row1 > div:nth-child(3) > div.active > span {
+  -webkit-transition: top .2s, bottom .2s, opacity .2s .1s, -webkit-transform .2s .2s;
+  transition: top .2s, bottom .2s, opacity .2s .1s, -webkit-transform .2s .2s;
+  transition: top .2s, bottom .2s, transform .2s .2s, opacity .2s .1s;
+  transition: top .2s, bottom .2s, transform .2s .2s, opacity .2s .1s, -webkit-transform .2s .2s;
+}
+
+.wrapper .row1 > div:nth-child(3) > div.active > span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: calc(50% - 10px);
+}
+
+.wrapper .row1 > div:nth-child(3) > div.active > span:nth-child(2) {
+  opacity: 0;
+}
+
+.wrapper .row1 > div:nth-child(3) > div.active > span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  bottom: calc(50% - 10px);
+}
+
+.wrapper .row1 > div:nth-child(4) > div {
+  -webkit-transition: .2s;
+  transition: .2s;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.wrapper .row1 > div:nth-child(4) > div > span {
+  -webkit-transition: top .2s .2s, bottom .2s .2s, opacity .2s .1s, -webkit-transform .2s;
+  transition: top .2s .2s, bottom .2s .2s, opacity .2s .1s, -webkit-transform .2s;
+  transition: top .2s .2s, bottom .2s .2s, transform .2s, opacity .2s .1s;
+  transition: top .2s .2s, bottom .2s .2s, transform .2s, opacity .2s .1s, -webkit-transform .2s;
+}
+
+.wrapper .row1 > div:nth-child(4) > div.active {
+  -webkit-transition: .2s .2s;
+  transition: .2s .2s;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.wrapper .row1 > div:nth-child(4) > div.active > span {
+  -webkit-transition: top .2s, bottom .2s, opacity .2s .1s, -webkit-transform .2s .2s;
+  transition: top .2s, bottom .2s, opacity .2s .1s, -webkit-transform .2s .2s;
+  transition: top .2s, bottom .2s, transform .2s .2s, opacity .2s .1s;
+  transition: top .2s, bottom .2s, transform .2s .2s, opacity .2s .1s, -webkit-transform .2s .2s;
+}
+
+.wrapper .row1 > div:nth-child(4) > div.active > span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: calc(50% - 10px);
+}
+
+.wrapper .row1 > div:nth-child(4) > div.active > span:nth-child(2) {
+  opacity: 0;
+}
+
+.wrapper .row1 > div:nth-child(4) > div.active > span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  bottom: calc(50% - 10px);
+}
+
+.wrapper .row2 > div:nth-child(1) > div {
+  position: relative;
+}
+
+.wrapper .row2 > div:nth-child(1) > div > span {
+  -webkit-transition: top .2s .2s, bottom .2s .2s, left .2s .2s, opacity .2s .1s, -webkit-transform .2s;
+  transition: top .2s .2s, bottom .2s .2s, left .2s .2s, opacity .2s .1s, -webkit-transform .2s;
+  transition: top .2s .2s, bottom .2s .2s, left .2s .2s, transform .2s, opacity .2s .1s;
+  transition: top .2s .2s, bottom .2s .2s, left .2s .2s, transform .2s, opacity .2s .1s, -webkit-transform .2s;
+}
+
+.wrapper .row2 > div:nth-child(1) > div > span:nth-child(2) {
+  left: 0px;
+  opacity: 1;
+}
+
+.wrapper .row2 > div:nth-child(1) > div.active > span {
+  -webkit-transition: top .2s, bottom .2s, left .2s, opacity .2s .1s, -webkit-transform .2s .2s;
+  transition: top .2s, bottom .2s, left .2s, opacity .2s .1s, -webkit-transform .2s .2s;
+  transition: top .2s, bottom .2s, left .2s, transform .2s .2s, opacity .2s .1s;
+  transition: top .2s, bottom .2s, left .2s, transform .2s .2s, opacity .2s .1s, -webkit-transform .2s .2s;
+}
+
+.wrapper .row2 > div:nth-child(1) > div.active > span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: calc(50% - 10px);
+}
+
+.wrapper .row2 > div:nth-child(1) > div.active > span:nth-child(2) {
+  position: absolute;
+  left: -50px;
+  opacity: 0;
+}
+
+.wrapper .row2 > div:nth-child(1) > div.active > span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   bottom: calc(50% - 10px);

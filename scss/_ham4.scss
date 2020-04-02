@@ -1,9 +1,9 @@
 .wrapper {
   .row1 {
-    &>div:nth-child(2) {
+    &>div:nth-child(4) {
 
       &>div {
-        transition: .2s .4s;
+        transition: .2s;
         transform: rotate(0);
 
         &>span {
@@ -12,11 +12,11 @@
       }
 
       &>div.active {
-        transition: .2s;
-        transform: rotate(90deg);
+        transition: .2s .2s;
+        transform: rotate(-90deg);
 
         &>span {
-          transition: top .2s .2s, bottom .2s .2s, transform .2s .4s, opacity .2s .3s;
+          transition: top .2s, bottom .2s, transform .2s .2s, opacity .2s .1s;
 
           &:nth-child(1) {
             transform: rotate(45deg);

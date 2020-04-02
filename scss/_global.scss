@@ -32,7 +32,6 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      color: white;
       border: 1px solid black;
       box-sizing: border-box;
 
@@ -51,7 +50,7 @@ body {
           height: 20px;
           opacity: 1;
           background-color: #000;
-          border-radius: 20%;
+          border-radius: 40%;
         }
 
         &>span {
